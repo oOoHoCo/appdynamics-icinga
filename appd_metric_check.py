@@ -35,7 +35,7 @@ translate_status = {
 def main():
 	status = 3
 
-	parser = argparse.ArgumentParser(description="Shop Operations Appdynamics Metric Check")
+	parser = argparse.ArgumentParser(description="Appdynamics Metric Check")
 	parser.add_argument("-H", "--host", help="hostname/IP of appdynamics controller",
 	                    default="http://accshmonitorfebsa01.fe.server.lan")
 	parser.add_argument("-P", "--port", help="port number off Appdynamics controller(default: 8090)", default="8090")
