@@ -8,7 +8,7 @@ appdynamics nagios/icinga metric check. use if you want to use icinga/nagios for
                                 [-c CURRENT] [-b BUSINESSTRANSACTION] [-w WARNING]
                                 [-m MAX] [-n NAME]
 
-    Shop Operations Appdynamics Metric Check
+   Appdynamics Metric Check
 
     optional arguments:
       -h, --help            show this help message and exit
