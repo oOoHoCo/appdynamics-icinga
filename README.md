@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+appd_metric_check.py
+--------------------
 
-You can use the [editor on GitHub](https://github.com/oOoHoCo/appdynamics-icinga/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+appdynamics nagios/icinga metric check. use if you want to use icinga/nagios for alarming.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    usage: appd_metric_check.py [-h] [-H HOST] [-P PORT] [-u USERNAME]
+                                [-p PASSWORD] [-d DURATION] [-a APPLICATION]
+                                [-c CURRENT] [-b BUSINESSTRANSACTION] [-w WARNING]
+                                [-m MAX] [-n NAME]
 
-### Markdown
+    Shop Operations Appdynamics Metric Check
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/oOoHoCo/appdynamics-icinga/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    optional arguments:
+      -h, --help            show this help message and exit
+      -H HOST, --host HOST  hostname/IP of appdynamics controller
+      -P PORT, --port PORT  port number off Appdynamics controller(default: 8090)
+      -u USERNAME, --username USERNAME
+                            username (username@customer)
+      -p PASSWORD, --password PASSWORD
+                            password
+      -d DURATION, --duration DURATION
+                            duration to query in minutes (default: 5)
+      -a APPLICATION, --application APPLICATION
+                            application name
+      -c CURRENT, --current CURRENT
+                            use the current value - only for BTs that carry this
+                            info (default: false)
+      -b BUSINESSTRANSACTION, --businesstransaction BUSINESSTRANSACTION
+                            Business Transaction
+      -w WARNING, --warning WARNING
+                            warning threshold
+      -m MAX, --max MAX     critical threshold
+      -n NAME, --name NAME  Name Shown in Additional Info, otherwise given BT will
+                            be used
